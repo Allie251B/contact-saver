@@ -7,7 +7,7 @@
 ## Overview
 
 
-The application is designed to manage the integration of GitHub user data with Freshdesk contacts. The primary components of this program are functions for creating or updating Freshdesk contacts, checking user existence in the database, and adding or updating user and subdomain information.
+The application is designed to manage the integration of GitHub user data with Freshdesk contacts. The primary components of this program are functions for getting the GitHub user information and creating or updating Freshdesk contacts, checking user existence in the database, and adding or updating user and subdomain information.
 \
 \
 This is a simple console application created using **Javascript, Node.js, PostreSQL, PrismaORM. Jest** is also used for **unit testing.**
