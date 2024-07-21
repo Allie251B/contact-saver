@@ -28,7 +28,7 @@ You need to generate a GitHub and Flaskdesk tokens beforehand. If you need help 
 
 - Clone the repo 
  ```
- git clone https://github.com/Allie251B/quickbase-task.git
+ git clone https://github.com/Allie251B/contact-saver.git
  ```
 - Copy .env.template to .env and replace my variables with your generated tokens and [PostgreSQL URL](https://www.prisma.io/docs/orm/overview/databases/postgresql#connection-url).
 - Open terminal
