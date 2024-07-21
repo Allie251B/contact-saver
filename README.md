@@ -73,7 +73,7 @@ Enter the GitHub username: Allie251B
 Enter the Freshdesk subdomain: quickbase-task
 ```
 
-3. If succesful a contact will be created/updated and added to the database and Flashdesk. If not a proper error messege will be displayed.
+3. If succesful a contact will be created/updated and added to the database and Flashdesk. If not a proper error message will be displayed.
 
 
 ---
