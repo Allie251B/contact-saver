@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model GitHubUsers {
+  id                  Int           @id @default(autoincrement())
+  username            String        @unique
+  name                String?
+  createdAt           DateTime      @default(now())
+  accountCreationDate DateTime
+  domains             UserDomains[] 
+}
+
+model Domains {
+  id        Int           @id @default(autoincrement())
+  name      String        @unique
+  createdAt DateTime      @default(now())
+  users     UserDomains[] 
+}
+
+model UserDomains {
+  userId    Int
+  domainId  Int
+  recordId  BigInt
+  createdAt DateTime @default(now())
+
+  user   GitHubUsers @relation(fields: [userId], references: [id])
+  domain Domains     @relation(fields: [domainId], references: [id])
+
+  @@id([userId, domainId])
+  @@map("user_domains")
+}
