@@ -56,7 +56,7 @@ $ node contact_saver.js
 
 If you want to run the tests type
 ```
-$ node test
+$ npm test
 ```
 
 
